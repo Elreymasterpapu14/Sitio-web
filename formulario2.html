@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Viajes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            margin: 0;
+            background-image: url("D:\mi pagina web\avion-larga-duracion-3271e431-focus-0-0-732-549 (1).jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .form-container {
+            background-color: rgba(172, 233, 153, 0.8); /* Fondo blanco semitransparente */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="date"], textarea, input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button.clear {
+            background-color: #dc3545;
+        }
+        button.clear:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulario de Viajes</h2>
+        <form action="mailto:cbeatrizfp@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+                <label for="nombre">Nombre del viajero</label>
+                <input type="text" id="NOMBRE" name="NOMBRE" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="destino">Destino</label>
+                <input type="text" id="DESTINO" name="destination" required>
+            </div>
+            <div class="form-group">
+                <label for="inicio de viaje">Fecha de inicio</label>
+                <input type="date" id="Fecha de inicio" name="Fecha de inicio" required>
+            </div>
+            <div class="form-group">
+                <label for="fin de viaje">Fecha de fin</label>
+                <input type="date" id="Fecha de fin" name="Fecha de fin" required>
+            </div>
+            <div class="form-group">
+                <label>Tipo de viaje</label>
+                <div>
+                    <input type="radio" id="tipo de viaje" name="tipo de viaje" value="tipo de viaje" required>
+                    <label for="tipo de viaje">Negocios</label>
+                </div>
+                <div>
+                    <input type="radio" id="PLACER" name="tipo de viaje" value="tipo de viaje" required>
+                    <label for="tipo de viaje">Placer</label>
+                </div>
+                <div>
+                    <input type="radio" id="AVENTURA" name="tipo de viaje" value="adventure" required>
+                    <label for="adventure">Aventura</label>
+                </div>
+                <div>
+                    <input type="radio" id="OTROS" name="tipo de viaje" value="other" required>
+                    <label for="other">Otro</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="age-range">Rango de edad</label>
+                <input type="text" id="age-range" name="rango de edad" placeholder="Ej. 25-35" required>
+            </div>
+            <div class="form-group">
+                <label for="num-people">Número de personas</label>
+                <input type="number" id="num-people" name="numero de viajeros" min="1" required>
+            </div>
+            <div class="form-group">
+                <label>¿Va con niños?</label>
+                    
+                    <input type="radio" id="N" name="niños" value="SI">
+                     <label for="">SI</label>
+                     <input type="radio" id="N" name="niños" value="NO">
+                    <label for="masculino">NO</label>
+                    <br>
+            </div>
+            <div class="form-group">
+                <label>Preferencias de Viaje</label>
+                <div>
+                    <input type="checkbox" id="guide" name="PREFERENCIA DE VIAJE" value="Guía turística">
+                    <label for="Guía turística">Guía turística</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="transport" name="PREFERENCIA DE VIAJE" value="Transporte incluido">
+                    <label for="Transporte incluido">Transporte incluido</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="accommodation" name="PREFERENCIA DE VIAJE" value="Alojamiento reservado">
+                    <label for="Alojamiento reservado">Alojamiento reservado</label>
+                </div>
+                <br>
+            </div>
+            <div class="form-group">
+                <label for="cometario">Comentarios adicionales</label>
+                <textarea id="comments" name="comentario" rows="4"></textarea>
+            </div>
+            <div class="form-actions">
+                <button type="submit">Enviar</button>
+                <button type="button" class="clear" onclick="clearForm()">Borrar</button>
+            </div>
+        <nav>
+            <ul>
+                <li><a href="D:\mi pagina web\Index.html">Historia</a></li>
+                <li><a href="D:\mi pagina web\Pagina2.html">Tipos de Aviones</a></li>
+                <li><a href="D:\mi pagina web\Pagina3.html">Funcionamiento</a></li>
+                <li><a href="D:\mi pagina web\Pagina4.html">Curiosidades</a></li>
+                <li><a href="#contacto">Formulario</a></li>
+            </ul>
+        </nav>
+        </form>
+    </div>
+
+  
+</body>
+</html>
+
+
+
+
